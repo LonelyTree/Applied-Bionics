@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { CssBaseline, Grid, ThemeProvider } from '@material-ui/core'
+import NavBar from './components/navBar'
+import Masthead from './components/masthead'
+import MissionStatement from './components/missionStatement'
+import News from './components/news'
+import Promos from './components/promos'
+import InfoBar from './components/infoBar'
+import Footer from './components/footer'
+import { theme } from './theme'
+import { useStyles } from './appStyles'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const classes = useStyles()
+	return (
+		<ThemeProvider theme={theme}>
+			<CssBaseline />
+			<Grid className={classes.root}>
+				<NavBar />
+				<Masthead />
+				<MissionStatement />
+				<News />
+				<Promos />
+				<InfoBar />
+				<Footer />
+			</Grid>
+		</ThemeProvider>
+	)
 }
 
-export default App;
+export default App
