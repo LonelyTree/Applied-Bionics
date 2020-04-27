@@ -5,6 +5,7 @@ export const useStyles = makeStyles((theme) => ({
 		promoRoot: {
 			color: theme.palette.secondary.main,
 			paddingBottom: '10px',
+			paddingTop: '45px',
 		},
 		promoWrapper: {
 			width: '100%',
@@ -52,6 +53,7 @@ export const useStyles = makeStyles((theme) => ({
 		promoRoot: {
 			color: theme.palette.secondary.main,
 			paddingBottom: '10px',
+			paddingTop: '45px',
 		},
 		promoWrapper: {
 			width: '100%',
@@ -95,7 +97,7 @@ export const useStyles = makeStyles((theme) => ({
 	[theme.breakpoints.between('md', 'lg')]: {
 		promoRoot: {
 			color: theme.palette.secondary.main,
-			paddingBottom: '10px',
+			paddingTop: '45px',
 		},
 		promoWrapper: {
 			width: '50%',
@@ -116,6 +118,7 @@ export const useStyles = makeStyles((theme) => ({
 		},
 		infoHeader: {
 			width: '100%',
+			fontSize: '3vh',
 			fontFamily: 'IBM Plex Sans, sans-serif',
 			letterSpacing: '1px',
 			marginLeft: '10px',
@@ -136,10 +139,60 @@ export const useStyles = makeStyles((theme) => ({
 			boxShadow: '0 0 10px black',
 		},
 	},
+	[theme.breakpoints.between('lg', 'xl')]: {
+		promoRoot: {
+			color: theme.palette.secondary.main,
+			paddingTop: '45px',
+		},
+		promoWrapper: {
+			width: '50%',
+			height: '65vh',
+			backgroundSize: 'cover',
+			backgroundPosition: 'center',
+			display: 'inline-flex',
+			flexDirection: 'column',
+			justifyContent: 'center',
+		},
+		imageWrapper: {},
+		image: { width: '100%' },
+		infoWrapper: {
+			marginLeft: '3vw',
+			width: '40%',
+			height: '20vh',
+			textAlign: 'start',
+			background: '#dce1ded1',
+			boxShadow: '0 0 10px black',
+		},
+		infoHeader: {
+			width: '100%',
+			fontSize: '2vw',
+			fontFamily: 'IBM Plex Sans, sans-serif',
+			letterSpacing: '1px',
+			marginLeft: '10px',
+			marginBottom: '0px',
+		},
+		paragraph: {
+			letterSpacing: '1px',
+			fontSize: '1vw',
+			marginLeft: '10px',
+			color: theme.palette.text.primary,
+			padding: '5px',
+			width: '100%',
+			height: 'auto',
+			background: theme.palette.secondary.main,
+		},
+		button: {
+			background: theme.palette.secondary.main,
+			width: '30%',
+			marginTop: '2vw',
+			marginLeft: '3vw',
+			boxShadow: '0 0 10px black',
+		},
+	},
 	[theme.breakpoints.up('xl')]: {
 		promoRoot: {
 			color: theme.palette.secondary.main,
-			background: 'white',
+			paddingTop: '45px',
 		},
 		promoWrapper: {
 			width: '50%',

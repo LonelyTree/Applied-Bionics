@@ -5,6 +5,7 @@ export const useStyles = makeStyles((theme) => ({
 		infoRoot: {
 			width: '85%',
 			marginBottom: '35px',
+			marginLeft: '40px',
 		},
 		infoWrapper: {
 			display: 'inline-flex',
@@ -17,7 +18,7 @@ export const useStyles = makeStyles((theme) => ({
 			marginTop: '50px',
 		},
 		descWrapper: {
-			width: '150px',
+			width: '40vw',
 			display: 'inline-flex',
 			justifyContent: 'space-between',
 			textAlign: 'start',
@@ -51,7 +52,7 @@ export const useStyles = makeStyles((theme) => ({
 			marginTop: '50px',
 		},
 		descWrapper: {
-			width: '140px',
+			width: '18vw',
 			height: '3vw',
 			display: 'inline-flex',
 			justifyContent: 'space-between',
@@ -86,7 +87,7 @@ export const useStyles = makeStyles((theme) => ({
 			marginTop: '50px',
 		},
 		descWrapper: {
-			width: '140px',
+			width: '21vw',
 			height: '3vw',
 			display: 'inline-flex',
 			justifyContent: 'space-between',
@@ -94,7 +95,42 @@ export const useStyles = makeStyles((theme) => ({
 			flexDirection: 'row',
 		},
 		infoDesc: {
-			fontSize: '1.7vw',
+			fontSize: '1.7vh',
+			color: theme.palette.text.secondary,
+			marginTop: '1px',
+			letterSpacing: '1px',
+		},
+
+		arrow: { fontSize: '15px', marginTop: '4px' },
+	},
+	[theme.breakpoints.between('lg', 'xl')]: {
+		infoRoot: {
+			width: '90%',
+			marginBottom: '50px',
+			display: 'inline-flex',
+			justifyContent: 'space-evenly',
+			marginLeft: '5vw',
+		},
+		infoWrapper: {
+			display: 'inline-flex',
+			flexDirection: 'column',
+			width: '100%',
+		},
+		infoHeader: {
+			fontSize: '1vw',
+			color: theme.palette.text.primary,
+			marginTop: '50px',
+		},
+		descWrapper: {
+			width: '12vw',
+			height: '1.5vw',
+			display: 'inline-flex',
+			justifyContent: 'space-between',
+			textAlign: 'start',
+			flexDirection: 'row',
+		},
+		infoDesc: {
+			fontSize: '1.7vh',
 			color: theme.palette.text.secondary,
 			marginTop: '1px',
 			letterSpacing: '1px',

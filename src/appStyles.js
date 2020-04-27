@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core'
 
 export const useStyles = makeStyles((theme) => ({
-	[theme.breakpoints.down('sm')]: {
+	[theme.breakpoints.up('sm')]: {
 		root: {
 			display: 'inline-flex',
 			flexDirection: 'column',
