@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Applied-Bionics/precache-manifest.eb0d8a05ab1b611a96cb5f1d3362df44.js"
+  "/Applied-Bionics/precache-manifest.5945f8da62bb1a449b4eadde62df496f.js"
 );
 
 self.addEventListener('message', (event) => {
