@@ -38,7 +38,10 @@ export const useStyles = makeStyles((theme) => ({
 			},
 		},
 		imageWrapper: {},
-		image: { width: '100%' },
+		image: {
+			width: '100%',
+			height: '100%',
+		},
 		infoWrapper: {
 			width: '80%',
 			margin: '0 auto',
@@ -84,7 +87,10 @@ export const useStyles = makeStyles((theme) => ({
 			},
 		},
 		imageWrapper: {},
-		image: { width: '100%' },
+		image: {
+			width: '100%',
+			height: '100%',
+		},
 		infoWrapper: {
 			width: '80%',
 			margin: '0 auto',

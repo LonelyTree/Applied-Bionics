@@ -11,7 +11,10 @@ export const useStyles = makeStyles((theme) => ({
 			alignItems: 'center',
 		},
 		imageWrapper: {},
-		image: { width: '100%' },
+		image: {
+			width: '100%',
+			height: '100%',
+		},
 		descWrapper: { width: '95%' },
 		descHeader: {
 			fontSize: '25px',
@@ -33,7 +36,10 @@ export const useStyles = makeStyles((theme) => ({
 			alignItems: 'center',
 		},
 		imageWrapper: {},
-		image: { width: '100%' },
+		image: {
+			width: '100%',
+			height: '100%',
+		},
 		descWrapper: { width: '95%' },
 		descHeader: {
 			fontSize: '25px',

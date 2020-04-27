@@ -23,7 +23,10 @@ export const useStyles = makeStyles((theme) => ({
 			justifyContent: 'center',
 			alignContent: 'center',
 		},
-		logo: { width: '100%' },
+		logo: {
+			width: '100%',
+			height: '100%',
+		},
 		iconButton: {
 			width: 'auto',
 		},
@@ -50,7 +53,10 @@ export const useStyles = makeStyles((theme) => ({
 			justifyContent: 'center',
 			alignContent: 'center',
 		},
-		logo: { width: '50%' },
+		logo: {
+			width: '50%',
+			height: '100%',
+		},
 		iconButton: {
 			width: 'auto',
 		},
